@@ -27,14 +27,14 @@ The goal of the project is to:
 
 The code provided here consists of the following:
 
-- dsp_config.h			Configures the two channels including gain, delay, and biquads. A maximum of 10 biquads are allowed for each channel.
-- dsp_filter.cpp 		Code that converts the input buffer supplied by the LyraT to the filtered result.
-- dsp_plot.cpp			Plots the transfer function on request to the serial output.
-- dsp_process.cpp		Initializes and acts as the main interface to the DSP. MUCH of this code I borrowed from https://github.com/Jeija/esp32-lyrat-passthrough.
-- dsp_process.h			Header file for the DSP.
-- es8388_registers.h		Defines the registers of the ES8388 codec.
-- dsps_biquad_f32_ae32.S	Assembly code provided by Espressif for calculating the Biquad filters.
-- dsps_dotprod_f32_m_ae32.S	Additional assembly code to support dot product calculations for Biquad filters.
+- dsp_config.h			- Configures the two channels including gain, delay, and biquads. A maximum of 10 biquads are allowed for each channel.
+- dsp_filter.cpp 		- Code that converts the input buffer supplied by the LyraT to the filtered result.
+- dsp_plot.cpp			- Plots the transfer function on request to the serial output.
+- dsp_process.cpp		- Initializes and acts as the main interface to the DSP. MUCH of this code I borrowed from https://github.com/Jeija/esp32-lyrat-passthrough.
+- dsp_process.h			- Header file for the DSP.
+- es8388_registers.h		- Defines the registers of the ES8388 codec.
+- dsps_biquad_f32_ae32.S	- Assembly code provided by Espressif for calculating the Biquad filters.
+- dsps_dotprod_f32_m_ae32.S	- Additional assembly code to support dot product calculations for Biquad filters.
 
 Note: It was necessary to bring in the Espressif assembly code routines directly into the project as the libraries for the LyraT DSP are not available within the Arduino environment.
 
