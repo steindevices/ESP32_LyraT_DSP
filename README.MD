@@ -40,8 +40,8 @@ Note: It was necessary to bring in the Espressif assembly code routines directly
 
 In order to support the requirements above, it was necessary to include the following additional Arduino libraries for the ESP32 Wrover:
 
-- ArduinoOTA	To support over-the-air updates to the device
-- TelnetSpy	To support user commands to the DSP from a Telnet connection
+- ArduinoOTA	- To support over-the-air updates to the device
+- TelnetSpy	- To support user commands to the DSP from a Telnet connection
 
 (Instructions regarding how to employ these Arduino libraries are available from their respective GitHubs).
 
