@@ -2,8 +2,8 @@
 #include <ArduinoOTA.h>                 // OTA library
 #include "dsp_process.h"
 
-#define WIFI_SSID                     "Xavier"
-#define WIFI_PASSWORD                 "rsgirsgi"
+#define WIFI_SSID                     "SSID"
+#define WIFI_PASSWORD                 "PASSWORD"
 
 //------------------------------------------------------------------------------------ 
 // Common data
